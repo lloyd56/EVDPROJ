@@ -1,1 +1,84 @@
 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Printing Calculator | PrintEase</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<header>
+    <nav class="nav">
+        <a class="logo" href="homepage.html">PrintEase</a>
+        <div class="nav-links">
+            <a href="homepage.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="order.html">Order</a>
+            <a href="calculator.html">Calculator</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="container">
+        <span class="eyebrow">JOHN LLOYD</span>
+        <h1>Printing Cost <span>Calculator</span></h1>
+        <p>Calculate your printing budget before placing an order.</p>
+    </div>
+</section>
+
+<section class="section container">
+    <div class="panel form-layout">
+        <h2>Calculate Your Cost</h2>
+
+        <p>Select your printing type:</p>
+
+        <label class="field">
+            <input type="radio" name="printType" value="bw"
+                   checked style="display:inline;width:auto">
+            Black & White - ₱2 per page
+        </label>
+
+        <label class="field">
+            <input type="radio" name="printType" value="color"
+                   style="display:inline;width:auto">
+            Colored - ₱4 per page
+        </label>
+
+        <label class="field">
+            Number of Pages
+            <input type="number" id="calcPages"
+                   min="1" value="10">
+        </label>
+
+        <div class="buttons">
+            <button class="btn secondary" id="minusPage" type="button">
+                − Page
+            </button>
+            <button class="btn secondary" id="plusPage" type="button">
+                + Page
+            </button>
+        </div>
+
+        <div class="result">
+            <span>Estimated Printing Cost</span>
+            <strong id="calcTotal">₱20.00</strong>
+            <span id="calcBreakdown" class="small">
+                10 pages × ₱2.00 per page
+            </span>
+        </div>
+
+        <a class="btn" href="order.html">Continue to Order</a>
+    </div>
+</section>
+
+<footer class="footer">
+    <p>PrintEase | Printing Cost Calculator</p>
+</footer>
+</body>
+</html>
