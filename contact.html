@@ -1,1 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | PrintEase</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<header>
+    <nav class="nav">
+        <a class="logo" href="homepage.html">PrintEase</a>
+        <div class="nav-links">
+            <a href="homepage.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="order.html">Order</a>
+            <a href="calculator.html">Calculator</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="container">
+        <span class="eyebrow">DANIEL RACHO</span>
+        <h1>Contact <span>PrintEase</span></h1>
+        <p>Have a question? Send us an inquiry.</p>
+    </div>
+</section>
+
+<section class="section container">
+    <div class="two-col">
+        <div>
+            <h2>How Can We Help?</h2>
+            <p class="muted">
+                Ask us about printing prices, school supplies,
+                online file submission, or pickup arrangements.
+            </p>
+
+            <div class="card">
+                <h3>Pickup Arrangements</h3>
+                <p>
+                    Pickup location and time will be confirmed
+                    with the customer.
+                </p>
+            </div>
+
+            <br>
+
+            <div class="card">
+                <h3>Customer Inquiries</h3>
+                <p>
+                    Please provide your correct email address
+                    so your inquiry details are clear.
+                </p>
+            </div>
+        </div>
+
+        <form class="panel" id="contactForm">
+            <h2>Inquiry Form</h2>
+
+            <label class="field">
+                Your Name
+                <input type="text" id="contactName"
+                       required placeholder="Enter your name">
+            </label>
+
+            <label class="field">
+                Email Address
+                <input type="email" id="contactEmail"
+                       required placeholder="you@example.com">
+            </label>
+
+            <label class="field">
+                Inquiry Topic
+                <select id="contactTopic">
+                    <option>Printing Prices</option>
+                    <option>School Supplies</option>
+                    <option>Online File Submission</option>
+                    <option>Pickup Arrangement</option>
+                    <option>Other Inquiry</option>
+                </select>
+            </label>
+
+            <label class="field">
+                Message
+                <textarea id="contactMessage" rows="5"
+                          required placeholder="Write your inquiry"></textarea>
+            </label>
+
+            <button class="btn full" type="submit">
+                Send Inquiry
+            </button>
+
+            <p id="contactFeedback" class="success"></p>
+
+            <p class="small">
+                Demo only: messages are not actually emailed or saved.
+            </p>
+        </form>
+    </div>
+</section>
+
+<footer class="footer">
+    <p>PrintEase | Contact Us</p>
+</footer>
+</body>
+</html>
 
