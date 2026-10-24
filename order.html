@@ -1,1 +1,102 @@
 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form | PrintEase</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<header>
+    <nav class="nav">
+        <a class="logo" href="homepage.html">PrintEase</a>
+        <div class="nav-links">
+            <a href="homepage.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="order.html">Order</a>
+            <a href="calculator.html">Calculator</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="container">
+        <span class="eyebrow">JORIL CABALLERO</span>
+        <h1>Place Your <span>Order</span></h1>
+        <p>Complete the form and check your estimated total.</p>
+    </div>
+</section>
+
+<section class="section container">
+    <div class="panel form-layout">
+        <h2>Order Form</h2>
+
+        <form id="orderForm">
+            <label class="field">
+                Full Name
+                <input type="text" id="customerName" required
+                       placeholder="Enter your name">
+            </label>
+
+            <label class="field">
+                Select Service
+                <select id="orderService">
+                    <option value="bw">Black & White Printing - ₱2</option>
+                    <option value="color">Colored Printing - ₱4</option>
+                    <option value="copybw">B&W Photocopy - ₱1</option>
+                    <option value="copycolor">Colored Photocopy - ₱2</option>
+                    <option value="pen">Ballpen - ₱10</option>
+                    <option value="pencil">Pencil - ₱8</option>
+                    <option value="folder">Folder - ₱10</option>
+                </select>
+            </label>
+
+            <label class="field">
+                Quantity or Number of Pages
+                <input type="number" id="orderQty"
+                       min="1" value="1" required>
+            </label>
+
+            <label class="field">
+                Pickup Preference
+                <select>
+                    <option>Arrange Pickup</option>
+                    <option>Shop Pickup</option>
+                    <option>Confirm with Me</option>
+                </select>
+            </label>
+
+            <label class="field">
+                Order Notes
+                <textarea rows="3"
+                          placeholder="Additional instructions"></textarea>
+            </label>
+
+            <div class="total-box">
+                <span>Estimated Total</span>
+                <strong id="orderTotal">₱2.00</strong>
+            </div>
+
+            <button class="btn full" type="submit">
+                Review Order
+            </button>
+
+            <p id="orderFeedback" class="success"></p>
+        </form>
+
+        <p class="small">
+            Demo only: this form does not send or save orders.
+        </p>
+    </div>
+</section>
+
+<footer class="footer">
+    <p>PrintEase | Online Order Form</p>
+</footer>
+</body>
+</html>
